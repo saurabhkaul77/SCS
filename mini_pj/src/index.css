@@ -1,0 +1,125 @@
+@import "tailwindcss";
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+} 
+
+html, 
+body{
+  height: 100vh;
+  width: 100%;
+  
+}
+
+.parent{
+  min-width: 100vh ;
+  width: 100%;
+  background-color: #111;
+  display: flex;
+  padding-left: 60px;
+  padding-top: 30px;
+  color: white;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+
+.card{
+  height: 300px;
+  width: 260px;
+  border-radius: 20px;
+  background-color: white;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 8px 25px rgba(0,0,0,0.1);
+}
+
+/* ---------- TOP ---------- */
+.card .top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top img{
+  height: 32px;
+  width: 32px;
+  object-fit: contain;
+}
+
+.top button{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid #e5e5e5;
+  background: transparent;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+  color: black;
+}
+
+/* ---------- CENTER ---------- */
+.center h3{
+  font-size: 14px;
+  font-weight: 600;
+  color: #111;
+}
+
+.center h3 span{
+  font-size: 11px;
+  color: gray;
+  font-weight: normal;
+}
+
+.center h2{
+  font-size: 16px;
+  margin: 8px 0;
+  color: #111;
+}
+
+.center div{
+  display: flex;
+  gap: 8px;
+}
+
+.center div h4{
+  font-size: 11px;
+  font-weight: 500;
+  padding: 4px 8px;
+  background-color: #f2f2f2;
+  border-radius: 6px;
+  color: #333;
+}
+
+/* ---------- BOTTOM ---------- */
+.bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bottom h3{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.bottom p{
+  font-size: 11px;
+  color: gray;
+}
+
+.bottom button{
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
